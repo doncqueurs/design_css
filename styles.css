@@ -1,3 +1,209 @@
-body {
-    color: pink;
+#navbarTabs_selectsegment .navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+  color: rgba(254, 252, 252);
+}
+
+
+/* ========================================
+   TIMELINE COMPONENT STYLES
+   ======================================== */
+
+/* Timeline container - fits in controlbar with fixed height */
+.timeline-container {
+  background: white;
+  padding: 15px;
+  height: calc(100vh - 100px); /* Full viewport height minus header/padding */
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Custom scrollbar for timeline */
+.timeline-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background: #2DAB66;
+  border-radius: 4px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb:hover {
+  background: #259356;
+}
+
+/* Timeline wrapper */
+.minimal-timeline {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Individual timeline item */
+.minimal-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  scroll-margin-top: 20px;
+  transition: background-color 0.3s;
+  padding: 12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  border-radius: 8px;
+}
+
+.minimal-item:last-child {
+  border-bottom: none;
+}
+
+/* Highlighted state when chart point is clicked */
+.minimal-item.highlighted {
+  background-color: #E8F7EF;
+}
+
+/* Date label */
+.minimal-date {
+  font-weight: 600;
+  color: #2DAB66;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Content wrapper with timeline line */
+.minimal-content {
+  padding-left: 20px;
+  border-left: 3px solid #E8F7EF;
+  position: relative;
+}
+
+/* Timeline dot indicator */
+.minimal-content::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #2DAB66;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #E8F7EF;
+  transition: all 0.3s;
+}
+
+/* Enlarged dot when highlighted */
+.minimal-item.highlighted .minimal-content::before {
+  width: 15px;
+  height: 15px;
+  left: -9px;
+  top: 3px;
+  box-shadow: 0 0 0 3px #2DAB66;
+}
+
+/* Article title */
+.minimal-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Article body text */
+.minimal-text {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Metadata (section/segment) */
+.minimal-meta {
+  font-size: 12px;
+  color: #999;
+}
+
+/* No news message */
+.no-news-message {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Ensure controlbar itself has proper height */
+.control-sidebar {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.control-sidebar .tab-content {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================== */
+
+/* Read more link styling */
+.read-more-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #2DAB66;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.read-more-link:hover {
+  color: #259356;
+  text-decoration: underline;
+}
+
+/* Modal styling */
+.modal-news-detail .modal-dialog {
+  max-width: 700px;
+}
+
+.modal-news-detail .modal-header {
+  background-color: #2DAB66;
+  color: white;
+  border-bottom: none;
+}
+
+.modal-news-detail .modal-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal-news-detail .modal-body {
+  padding: 30px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.modal-news-date {
+  color: #2DAB66;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.modal-news-meta {
+  color: #999;
+  font-size: 13px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.modal-news-text {
+  color: #333;
+  margin-bottom: 15px;
 }
