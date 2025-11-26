@@ -1,3 +1,6 @@
+
+
+
 body {
   color: purple;
 }
@@ -6,6 +9,132 @@ body {
   font-weight: bold;
   color: rgba(254, 252, 252);
 }
+
+/* ========================================
+   Landing Page STYLES
+   ======================================== */
+
+/* Container for segment cards */
+.segment-card {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 40px); /* Two cards per row with margins */
+  min-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Segment-specific background colors */
+.segment-3600 {
+  background-color: #4CAF50;
+}
+
+.segment-5000 {
+  background-color: #FF9800;
+}
+
+.segment-6500 {
+  background-color: #5F9EA0;
+}
+
+.segment-8500 {
+  background-color: #BA55D3;
+}
+
+/* Header section */
+.segment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.segment-number {
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  font-size: 52px;
+}
+
+.segment-status {
+  color: white;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* Metrics row */
+.segment-metrics {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 15px 10px;
+}
+
+.metric-item {
+  text-align: center;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.metric-middle {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.metric-label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Trend icons */
+.trend-up {
+  color: #4CAF50;
+  font-size: 28px;
+}
+
+.trend-down {
+  color: #F44336;
+  font-size: 28px;
+}
+
+.trend-stable {
+  color: #FF9800;
+  font-size: 28px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .segment-card {
+    width: calc(100% - 40px); /* Stack cards on smaller screens */
+  }
+}
+
+/* For when you want to change to 3 or 4 cards per row later */
+/*
+.segment-card {
+  width: calc(33.333% - 40px); /* Three per row 
+}
+
+.segment-card {
+  width: calc(25% - 40px); /* Four per row 
+}
+*/
+
+#navbarTabs_selectsegment .navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+  color: rgba(254, 252, 252);
+}
+
+
+
 
 
 /* ========================================
