@@ -1,3 +1,31 @@
+.data-row .rt-td:first-child {
+  font-weight: 500;
+}
+
+.total-row {
+  font-weight: 600;
+}
+
+.total-row .rt-td {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.percentage-row {
+  font-style: italic;
+}
+
+.negative-pct {
+  color: red;
+}
+
+.positive-pct {
+  color: green;
+}
+
+/* ================= 2025-11-28 =======================
+
+
 #navbarTabs_selectsegment .navbar-light .navbar-nav .nav-link {
   font-weight: bold;
   color: rgb(254, 252, 252);
