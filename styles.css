@@ -378,7 +378,7 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
   font-size: 14px;
   line-height: 1;
   color: #fe5d26 !important;
-  border: 2px solid #fe5d26;
+  border: 1px solid rgba(254, 93, 38, 0.5);
   font-weight: 500;
   transition: 0.2s all;
 }
@@ -393,6 +393,7 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
   #logout_link:hover, #logout_link:active, #logout_link:focus {
     background: #fe5d26;
     color: white !important;
+    border: 1px solid #fe5d26;
   }
   #logout_link:hover i, #logout_link:active i, #logout_link:focus i {
     left: 5px;
@@ -435,7 +436,7 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
 }
 @media (hover: hover) {
   #navbarTabs_selectsegment .nav-item.dropdown:not(.show):hover:before, #navbarTabs_selectsegment .nav-item.dropdown:not(.show):active:before, #navbarTabs_selectsegment .nav-item.dropdown:not(.show):focus:before {
-    background: rgb(86.3, 115.7, 139.5);
+    background: #0e385a !important;
   }
 }
 #navbarTabs_selectsegment .nav-item.dropdown.show a.nav-link.dropdown-toggle:after {
@@ -484,6 +485,62 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
 #navbarTabs_selectsegment li.nav-item.dropdown ul.dropdown-menu #tab-tonnage_8500dwt {
   background: #872dab;
   border: 2px solid #872dab;
+}
+
+body.fleet-tonnage-3600dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):before {
+  background: #2dab66;
+}
+
+body.fleet-tonnage-5000dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):before {
+  background: #fa8334;
+}
+
+body.fleet-tonnage-6500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):before {
+  background: #1d70b7;
+}
+@media (hover: hover) {
+  body.fleet-tonnage-6500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):hover:before, body.fleet-tonnage-6500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):active:before, body.fleet-tonnage-6500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):focus:before {
+    background: rgb(96.8, 154.9, 204.6);
+  }
+}
+
+body.fleet-tonnage-8500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):before {
+  background: #872dab;
+}
+@media (hover: hover) {
+  body.fleet-tonnage-8500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):hover:before, body.fleet-tonnage-8500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):active:before, body.fleet-tonnage-8500dwt #navbarTabs_selectsegment .nav-item.dropdown:not(.show):focus:before {
+    background: rgb(171, 108, 196.2);
+  }
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 30px;
+  color: #0e385a;
+  margin-bottom: 20px;
+}
+h1 span {
+  display: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+body.fleet-tonnage-3600dwt h1 span {
+  color: #2dab66;
+}
+
+body.fleet-tonnage-5000dwt h1 span {
+  color: #fa8334;
+}
+
+body.fleet-tonnage-6500dwt h1 span {
+  color: #1d70b7;
+}
+
+body.fleet-tonnage-8500dwt h1 span {
+  color: #872dab;
 }
 
 .content-wrapper {
@@ -547,6 +604,50 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
   margin-right: 20px;
 }
 
+body.fleet-tonnage-3600dwt .content-wrapper > .content .tab-content .tab-pane .card .card-header ul.nav-tabs li.nav-item a.nav-link:not(.active) {
+  background: linear-gradient(to top, rgba(45, 171, 102, 0.1), rgba(45, 171, 102, 0.2));
+}
+
+body.fleet-tonnage-5000dwt .content-wrapper > .content .tab-content .tab-pane .card .card-header ul.nav-tabs li.nav-item a.nav-link:not(.active) {
+  background: linear-gradient(to top, rgba(250, 131, 52, 0.1), rgba(250, 131, 52, 0.2));
+}
+
+body.fleet-tonnage-6500dwt .content-wrapper > .content .tab-content .tab-pane .card .card-header ul.nav-tabs li.nav-item a.nav-link:not(.active) {
+  background: linear-gradient(to top, rgba(29, 112, 183, 0.1), rgba(29, 112, 183, 0.2));
+}
+
+body.fleet-tonnage-8500dwt .content-wrapper > .content .tab-content .tab-pane .card .card-header ul.nav-tabs li.nav-item a.nav-link:not(.active) {
+  background: linear-gradient(to top, rgba(135, 45, 171, 0.1), rgba(135, 45, 171, 0.2));
+}
+
+/* ================= 2025-11-28 additions from Jochem  =======================
+
+.data-row .rt-td:first-child {
+  font-weight: 500;
+}
+
+.total-row {
+  font-weight: 600;
+}
+
+.total-row .rt-td {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.percentage-row {
+  font-style: italic;
+}
+
+.negative-pct {
+  color: red;
+}
+
+.positive-pct {
+  color: green;
+}
+
+ */
 .Reactable .rt-table {
   font-size: 14px;
   color: #222222;
@@ -573,15 +674,52 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
   background: rgb(222.3, 228, 232.75);
 }
 .Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr .rt-td {
-  border-color: rgb(210.6, 216, 220.5);
+  border-color: rgb(198.9, 204, 208.25);
 }
 .Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr .rt-td .rt-td-inner {
+  position: relative;
   padding: 7px 5px;
 }
 .Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr .rt-td.rt-sticky {
-  background: rgb(247.65, 249.75, 251.5);
+  background: rgb(246.6, 249, 251);
   border-left: 0;
   font-weight: 500;
+}
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row {
+  background: #eaf0f5;
+  color: #222222;
+  border-top: 1px solid #0e385a;
+  border-bottom: 1px solid #0e385a;
+  color: #0e385a;
+}
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row .rt-td .rt-td-inner {
+  font-weight: 700;
+}
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row .rt-td.rt-sticky {
+  background: #eaf0f5;
+  border-left: 0;
+}
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr .positive-pct,
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr .negative-pct {
+  display: block;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
+  height: calc(100% - 10px);
+}
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr .positive-pct {
+  background: rgb(223.5, 242.4, 232.05);
+  color: rgb(29.25, 111.15, 66.3);
+}
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr .negative-pct {
+  background: rgb(254.9, 238.8, 233.3);
+  color: rgb(190.5, 69.75, 28.5);
 }
 .Reactable .rt-table .rt-tr-striped-sticky {
   background: white;
@@ -661,7 +799,7 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
 
 aside.control-sidebar {
   height: auto;
-  top: 54px;
+  top: 0px;
   right: 20px !important;
   padding-top: 89px;
 }
@@ -700,7 +838,7 @@ aside.control-sidebar .timeline-container .minimal-timeline .minimal-item {
   overflow: hidden;
 }
 aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-date {
-  color: #1d70b7;
+  color: #0e385a;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
@@ -720,20 +858,20 @@ aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minim
   color: #222222;
 }
 aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link {
-  color: white;
-  background: #2dab66;
+  color: #0e385a;
+  background: transparent;
   border-radius: 999px;
   padding: 5px 10px;
   line-height: 1;
   font-size: 13px;
   text-decoration: none;
-  border: 2px solid #2dab66;
+  border: 1px solid #0e385a;
   transition: 0.2s all;
 }
 @media (hover: hover) {
   aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:hover, aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:active, aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:focus {
-    background: white;
-    color: #2dab66;
+    background: #0e385a;
+    color: white;
   }
 }
 aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content .minimal-meta {
@@ -751,6 +889,22 @@ aside.control-sidebar .timeline-container .no-news-message {
   text-align: left !important;
   padding: 10px 0 !important;
   color: #222222 !important;
+}
+
+body.fleet-tonnage-3600dwt aside.control-sidebar .minimal-meta {
+  color: #2dab66;
+}
+
+body.fleet-tonnage-5000dwt aside.control-sidebar .minimal-meta {
+  color: #fa8334;
+}
+
+body.fleet-tonnage-6500dwt aside.control-sidebar .minimal-meta {
+  color: #1d70b7;
+}
+
+body.fleet-tonnage-8500dwt aside.control-sidebar .minimal-meta {
+  color: #872dab;
 }
 
 .tabbable > ul.nav-tabs {
@@ -774,64 +928,310 @@ aside.control-sidebar .timeline-container .no-news-message {
 }
 @media (hover: hover) {
   .tabbable > ul.nav-tabs li.nav-item a.nav-link:hover, .tabbable > ul.nav-tabs li.nav-item a.nav-link:active, .tabbable > ul.nav-tabs li.nav-item a.nav-link:focus {
-    border-color: #1d70b7;
-    color: #1d70b7;
+    border-color: #0e385a;
+    color: #0e385a;
   }
 }
 .tabbable > ul.nav-tabs li.nav-item a.nav-link.active {
-  background: #1d70b7;
+  background: #0e385a;
   color: white;
-  border-color: #1d70b7;
+  border-color: #0e385a;
   font-weight: 700;
   padding: 5px 20px;
 }
 
-.modal-dialog .modal-content {
+.modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-dialog {
+  width: 80%;
+  max-width: 800px;
+}
+.modal .modal-dialog .modal-content {
   position: relative;
   border-radius: 12px;
 }
-.modal-dialog .modal-content .modal-header {
+.modal .modal-dialog .modal-content .modal-header {
   padding-right: 90px;
 }
-.modal-dialog .modal-content .modal-header h4.modal-title {
+.modal .modal-dialog .modal-content .modal-header h4.modal-title {
   font-weight: 700;
   line-height: 1.1;
 }
-.modal-dialog .modal-content .modal-body .modal-news-date {
+.modal .modal-dialog .modal-content .modal-body .modal-news-date {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #1d70b7;
+  color: #0e385a;
   font-size: 13px;
 }
-.modal-dialog .modal-content .modal-body .modal-news-text {
+.modal .modal-dialog .modal-content .modal-body .modal-news-text {
   color: #222222;
 }
-.modal-dialog .modal-content .modal-body .modal-news-meta {
+.modal .modal-dialog .modal-content .modal-body .modal-news-meta {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 10px;
   font-weight: 500;
 }
-.modal-dialog .modal-content .modal-footer {
+.modal .modal-dialog .modal-content .modal-footer {
   position: absolute;
   top: 7px;
   right: 10px;
   border: 0;
   padding: 0;
 }
-.modal-dialog .modal-content .modal-footer button {
+.modal .modal-dialog .modal-content .modal-footer button {
   border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
-  border: 2px solid #2dab66;
-  background: #2dab66;
-  color: white;
+  border: 1px solid #0e385a;
+  background: transparent;
+  color: #0e385a;
 }
 @media (hover: hover) {
-  .modal-dialog .modal-content .modal-footer button:hover, .modal-dialog .modal-content .modal-footer button:active, .modal-dialog .modal-content .modal-footer button:focus {
-    background: white;
-    color: #2dab66;
+  .modal .modal-dialog .modal-content .modal-footer button:hover, .modal .modal-dialog .modal-content .modal-footer button:active, .modal .modal-dialog .modal-content .modal-footer button:focus {
+    background: #0e385a;
+    color: white;
   }
+}
+
+body.fleet-tonnage-3600dwt .modal-dialog .modal-news-meta {
+  color: #2dab66;
+}
+
+body.fleet-tonnage-5000dwt .modal-dialog .modal-news-meta {
+  color: #fa8334;
+}
+
+body.fleet-tonnage-6500dwt .modal-dialog .modal-news-meta {
+  color: #1d70b7;
+}
+
+body.fleet-tonnage-8500dwt .modal-dialog .modal-news-meta {
+  color: #872dab;
+}
+
+.loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+html.shiny-busy .loading-overlay {
+  display: block;
+}
+
+.loading-overlay__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(234, 240, 245, 0.8);
+}
+
+.loading-overlay__loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #0e385a;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%, 100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+.tab-pane .form-group .form-control {
+  background: transparent;
+}
+.tab-pane .form-group .form-control button.dropdown-toggle {
+  border-radius: 999px;
+  background: white;
+  border: 1px solid transparent;
+  font-weight: 500;
+  color: #0e385a;
+}
+.tab-pane .form-group .form-control button.dropdown-toggle:after {
+  transition: 0.2s all;
+}
+@media (hover: hover) {
+  .tab-pane .form-group .form-control button.dropdown-toggle:hover, .tab-pane .form-group .form-control button.dropdown-toggle:active, .tab-pane .form-group .form-control button.dropdown-toggle:focus {
+    border-color: #0e385a;
+  }
+}
+.tab-pane .form-group .form-control.show button.dropdown-toggle {
+  background: white;
+  border: 1px solid #0e385a;
+  border-bottom: 1px solid transparent;
+  border-radius: 12px 12px 0 0;
+}
+.tab-pane .form-group .form-control.show button.dropdown-toggle:after {
+  transform: rotate(180deg);
+}
+.tab-pane .form-group .form-control.show div.dropdown-menu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0 0 12px 12px;
+  border: 1px solid #0e385a;
+  border-top: none;
+  box-shadow: 0 5px 5px rgba(34, 34, 34, 0.15);
+}
+.tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu {
+  background: white;
+}
+.tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li a.dropdown-item {
+  color: #222222 !important;
+}
+@media (hover: hover) {
+  .tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li a.dropdown-item:hover, .tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li a.dropdown-item:active, .tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li a.dropdown-item:focus {
+    background: #eaf0f5;
+  }
+}
+.tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li.selected a.dropdown-item, .tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li.active a.dropdown-item {
+  background: #eaf0f5;
+  font-weight: 700;
+}
+
+body.fleet-tonnage-3600dwt .tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li.selected a.dropdown-item, body.fleet-tonnage-3600dwt .tab-pane .form-group .form-control.show div.dropdown-menu ul.dropdown-menu li.active a.dropdown-item {
+  background: #2dab66;
+  color: white !important;
+}
+
+body.fleet-tonnage-5000dwt .tab-pane .form-group .form-control button.dropdown-toggle.show div.dropdown-menu ul.dropdown-menu li.selected a.dropdown-item, body.fleet-tonnage-5000dwt .tab-pane .form-group .form-control button.dropdown-toggle.show div.dropdown-menu ul.dropdown-menu li.active a.dropdown-item {
+  background: #fa8334;
+}
+
+.form-group label {
+  color: #0e385a;
+}
+
+.form-group.shiny-date-range-input .input-daterange .form-control {
+  border: 1px solid #0e385a;
+  color: #222222;
+}
+.form-group.shiny-date-range-input .input-daterange .form-control:first-child {
+  border-radius: 999px 0 0 999px;
+}
+.form-group.shiny-date-range-input .input-daterange .form-control:last-child {
+  border-radius: 0 999px 999px 0;
+}
+.form-group.shiny-date-range-input .input-daterange .input-group-addon {
+  padding: 0 5px;
+}
+.form-group.shiny-date-range-input .input-daterange .input-group-addon .input-group-text {
+  border: 0;
+  background: #0e385a;
+  color: white;
+}
+
+.datepicker {
+  border-radius: 6px !important;
+}
+.datepicker .focused, .datepicker .active {
+  background: #0e385a;
+}
+
+.datepicker table tr td span.active:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.active:hover, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.disabled.active:hover {
+  background: #0e385a !important;
+}
+
+.datepicker table tr td span:hover, .datepicker table tr td span.focused {
+  background: #eaf0f5 !important;
+}
+
+.multi-wrapper .header {
+  text-transform: uppercase;
+  color: #222222 !important;
+  font-size: 14px;
+}
+.multi-wrapper .item:hover {
+  background: #eaf0f5 !important;
+}
+.multi-wrapper a {
+  color: #0e385a;
+  font-weight: 500;
+}
+
+.tab-pane > div[style*="position: relative;"] {
+  position: unset !important;
+}
+
+button#legend_info.btn {
+  position: absolute;
+  top: 20px;
+  right: 36px;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  border-radius: 999px;
+  transition: 0.2s all;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  width: 19px;
+  height: 19px;
+  transition: 0.5s all;
+}
+button#legend_info.btn:after {
+  content: "Chart Legend Help";
+  margin-left: 5px;
+  color: #0e385a;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+button#legend_info.btn i {
+  font-size: 18px;
+  color: #0e385a;
+}
+@media (hover: hover) {
+  button#legend_info.btn:hover, button#legend_info.btn:active, button#legend_info.btn:focus {
+    width: 135px;
+  }
+}
+
+.login-panel {
+  box-shadow: unset;
+  background: #2dab66;
 }
 
 html {
