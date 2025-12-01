@@ -686,16 +686,18 @@ body.fleet-tonnage-8500dwt .content-wrapper > .content .tab-content .tab-pane .c
   font-weight: 500;
 }
 .Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row {
-  background: #eaf0f5;
   color: #222222;
-  border-top: 1px solid #0e385a;
-  border-bottom: 1px solid #0e385a;
   color: #0e385a;
 }
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row .rt-td {
+  border-top: 1px solid #0e385a;
+  border-bottom: 1px solid #0e385a;
+}
 .Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row .rt-td .rt-td-inner {
+  background: #eaf0f5;
   font-weight: 700;
 }
-.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row .rt-td.rt-sticky {
+.Reactable .rt-table .rt-tbody .rt-tr-group .rt-tr.total-row .rt-td .rt-sticky {
   background: #eaf0f5;
   border-left: 0;
 }
