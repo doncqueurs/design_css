@@ -1029,6 +1029,8 @@ body.fleet-tonnage-8500dwt .modal-dialog .modal-news-meta {
 
 html.shiny-busy .loading-overlay {
   display: block;
+  opacity: 0;
+  animation: fadeInDelayed 0.3s ease-in 1s forwards;
 }
 
 .loading-overlay__overlay {
