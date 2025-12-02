@@ -1,3 +1,16 @@
+/* ============== START - Dec 2, 2025 ============
+
+html.shiny-busy::before {
+  animation: fadeIn 0.3s ease-in 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* ============== END   - Dec 2, 2025 ============
+
 #navbarTabs_selectsegment .navbar-light .navbar-nav .nav-link {
   font-weight: bold;
   color: rgb(254, 252, 252);
