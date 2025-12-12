@@ -844,6 +844,12 @@ body.theme-dark.fleet-tonnage-8500dwt .content-wrapper > .content .tab-content .
 .Reactable .rt-table .rt-tr-highlight-sticky:hover {
   background: unset;
 }
+.Reactable .rt-table .rt-tr-striped {
+  background: unset;
+}
+.Reactable .rt-table .construction-column {
+  background: #ecfaf2;
+}
 
 .reactable ~ br,
 .reactable ~ hr {
@@ -984,6 +990,9 @@ body.theme-dark .Reactable .rt-table .rt-tr-striped-sticky {
 }
 body.theme-dark .Reactable .rt-table .rt-tr-highlight-sticky:hover {
   background: unset;
+}
+body.theme-dark .Reactable .rt-table .construction-column {
+  background: rgb(82.2, 82.2, 82.2);
 }
 body.theme-dark .reactable ~ p {
   color: #dee5e5;
