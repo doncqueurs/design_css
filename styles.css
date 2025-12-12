@@ -400,6 +400,15 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
   }
 }
 
+.main-header ul.navbar-right li.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-header ul.navbar-right li.nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 #navbarTabs_selectsegment {
   position: absolute;
   top: calc(100% + 18px);
