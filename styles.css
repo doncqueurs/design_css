@@ -411,6 +411,9 @@ ul.navbar-nav.sidebar-menu > li.nav-item a.nav-link p {
   }
 }
 
+.main-header ul.navbar-right .custom-control {
+  display: none !important;
+}
 .main-header ul.navbar-right li.nav-item {
   display: flex;
   justify-content: flex-end;
@@ -665,9 +668,6 @@ MOBILE
   }
   ul.navbar-right {
     margin-right: 40px;
-  }
-  ul.navbar-right .custom-control {
-    display: none;
   }
   #logout_link {
     font-size: 12px;
