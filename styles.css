@@ -2228,6 +2228,13 @@ MOBILE
   padding-right: 30px;
   max-width: 800px;
 }
+@media (max-width: 63.99em) {
+  #shiny-tab-definitions,
+  #shiny-tab-disclaimer,
+  #shiny-tab-ask_question {
+    padding-right: 0;
+  }
+}
 #shiny-tab-definitions h1,
 #shiny-tab-disclaimer h1,
 #shiny-tab-ask_question h1 {
@@ -2304,6 +2311,82 @@ MOBILE
 #shiny-tab-disclaimer img,
 #shiny-tab-ask_question img {
   max-width: 100%;
+}
+#shiny-tab-definitions table,
+#shiny-tab-disclaimer table,
+#shiny-tab-ask_question table {
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.2;
+  width: 100%;
+}
+@media (max-width: 46.24em) {
+  #shiny-tab-definitions table,
+  #shiny-tab-disclaimer table,
+  #shiny-tab-ask_question table {
+    word-break: break-word;
+    font-size: 12px;
+  }
+}
+#shiny-tab-definitions table thead tr,
+#shiny-tab-disclaimer table thead tr,
+#shiny-tab-ask_question table thead tr {
+  overflow: hidden;
+}
+#shiny-tab-definitions table thead tr th,
+#shiny-tab-disclaimer table thead tr th,
+#shiny-tab-ask_question table thead tr th {
+  background: #0e385a;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 46.24em) {
+  #shiny-tab-definitions table thead tr th,
+  #shiny-tab-disclaimer table thead tr th,
+  #shiny-tab-ask_question table thead tr th {
+    padding: 5px;
+  }
+}
+#shiny-tab-definitions table thead tr:first-of-type th:first-of-type,
+#shiny-tab-disclaimer table thead tr:first-of-type th:first-of-type,
+#shiny-tab-ask_question table thead tr:first-of-type th:first-of-type {
+  border-radius: 10px 0 0 0;
+}
+#shiny-tab-definitions table thead tr:first-of-type th:last-of-type,
+#shiny-tab-disclaimer table thead tr:first-of-type th:last-of-type,
+#shiny-tab-ask_question table thead tr:first-of-type th:last-of-type {
+  border-radius: 0 10px 0 0;
+}
+#shiny-tab-definitions table tbody tr,
+#shiny-tab-disclaimer table tbody tr,
+#shiny-tab-ask_question table tbody tr {
+  border-top: 1px solid rgb(187.2, 192, 196);
+}
+#shiny-tab-definitions table tbody tr td,
+#shiny-tab-disclaimer table tbody tr td,
+#shiny-tab-ask_question table tbody tr td {
+  padding: 15px;
+}
+@media (max-width: 46.24em) {
+  #shiny-tab-definitions table tbody tr td,
+  #shiny-tab-disclaimer table tbody tr td,
+  #shiny-tab-ask_question table tbody tr td {
+    padding: 5px;
+  }
+}
+#shiny-tab-definitions table tbody tr td:first-child,
+#shiny-tab-disclaimer table tbody tr td:first-child,
+#shiny-tab-ask_question table tbody tr td:first-child {
+  background: rgb(250.8, 252, 253);
+  font-weight: 700;
+  color: #0e385a;
+}
+#shiny-tab-definitions table tbody tr:last-of-type,
+#shiny-tab-disclaimer table tbody tr:last-of-type,
+#shiny-tab-ask_question table tbody tr:last-of-type {
+  border-bottom: 1px solid rgb(187.2, 192, 196);
 }
 
 #shiny-tab-ask_question .offset-sm-2 {
