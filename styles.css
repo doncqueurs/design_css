@@ -1404,6 +1404,7 @@ aside.control-sidebar {
   top: 0px;
   right: 20px !important;
   padding-top: 89px;
+  width: 350px;
 }
 aside.control-sidebar.control-sidebar-light {
   border-left: 0;
