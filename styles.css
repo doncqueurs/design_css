@@ -1431,7 +1431,11 @@ aside.control-sidebar .timeline-container h3 {
   font-weight: 700;
   letter-spacing: -1px;
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item {
+
+aside.control-sidebar .minimal-timeline .minimal-item,
+aside.control-sidebar .news-grid-item.minimal-item,
+#news_page_ui .news-grid .minimal-timeline .minimal-item,
+#news_page_ui .news-grid .news-grid-item.minimal-item {
   background: white;
   margin: 0 0 15px 0;
   box-shadow: 0 2px 3px rgba(14, 56, 90, 0.05);
@@ -1440,27 +1444,45 @@ aside.control-sidebar .timeline-container .minimal-timeline .minimal-item {
   overflow: hidden;
   border-bottom: 0;
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-date {
+aside.control-sidebar .minimal-timeline .minimal-item .minimal-date,
+aside.control-sidebar .news-grid-item.minimal-item .minimal-date,
+#news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-date,
+#news_page_ui .news-grid .news-grid-item.minimal-item .minimal-date {
   color: #0e385a;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content {
+aside.control-sidebar .minimal-timeline .minimal-item .minimal-content,
+aside.control-sidebar .news-grid-item.minimal-item .minimal-content,
+#news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content,
+#news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content {
   padding-left: 0;
   border-left: 0;
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content:before {
+aside.control-sidebar .minimal-timeline .minimal-item .minimal-content:before,
+aside.control-sidebar .news-grid-item.minimal-item .minimal-content:before,
+#news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content:before,
+#news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content:before {
   display: none;
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content .minimal-title {
+aside.control-sidebar .minimal-timeline .minimal-item .minimal-content .minimal-title,
+aside.control-sidebar .news-grid-item.minimal-item .minimal-content .minimal-title,
+#news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content .minimal-title,
+#news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content .minimal-title {
   font-weight: 700;
   color: #222222;
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content .minimal-text {
+aside.control-sidebar .minimal-timeline .minimal-item .minimal-content .minimal-text,
+aside.control-sidebar .news-grid-item.minimal-item .minimal-content .minimal-text,
+#news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content .minimal-text,
+#news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content .minimal-text {
   color: #222222;
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link {
+aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link,
+aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link,
+#news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link,
+#news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link {
   color: #0e385a;
   background: transparent;
   border-radius: 999px;
@@ -1472,12 +1494,24 @@ aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minim
   transition: 0.2s all;
 }
 @media (hover: hover) {
-  aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:hover, aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:active, aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:focus {
+  aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link:hover, aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link:active, aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link:focus,
+  aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link:hover,
+  aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link:active,
+  aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link:focus,
+  #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link:hover,
+  #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link:active,
+  #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link:focus,
+  #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link:hover,
+  #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link:active,
+  #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link:focus {
     background: #0e385a;
     color: white;
   }
 }
-aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content .minimal-meta {
+aside.control-sidebar .minimal-timeline .minimal-item .minimal-content .minimal-meta,
+aside.control-sidebar .news-grid-item.minimal-item .minimal-content .minimal-meta,
+#news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content .minimal-meta,
+#news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content .minimal-meta {
   margin: 15px -15px -15px -15px;
   padding: 8px 15px;
   border-top: 1px solid #dee5e5;
@@ -1486,7 +1520,8 @@ aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minim
   font-size: 10px;
   font-weight: 500;
 }
-aside.control-sidebar .timeline-container .no-news-message {
+aside.control-sidebar .no-news-message,
+#news_page_ui .news-grid .no-news-message {
   font-size: 14px;
   font-style: normal !important;
   text-align: left !important;
@@ -1494,20 +1529,45 @@ aside.control-sidebar .timeline-container .no-news-message {
   color: #222222 !important;
 }
 
-body.fleet-tonnage-3600dwt aside.control-sidebar .minimal-meta {
+body.fleet-tonnage-3600dwt aside.control-sidebar .minimal-meta,
+body.fleet-tonnage-3600dwt #news_page_ui .news-grid .minimal-meta {
   color: #2dab66;
 }
 
-body.fleet-tonnage-5000dwt aside.control-sidebar .minimal-meta {
+body.fleet-tonnage-5000dwt aside.control-sidebar .minimal-meta,
+body.fleet-tonnage-5000dwt #news_page_ui .news-grid .minimal-meta {
   color: #fa8334;
 }
 
-body.fleet-tonnage-6500dwt aside.control-sidebar .minimal-meta {
+body.fleet-tonnage-6500dwt aside.control-sidebar .minimal-meta,
+body.fleet-tonnage-6500dwt #news_page_ui .news-grid .minimal-meta {
   color: #1d70b7;
 }
 
-body.fleet-tonnage-8500dwt aside.control-sidebar .minimal-meta {
+body.fleet-tonnage-8500dwt aside.control-sidebar .minimal-meta,
+body.fleet-tonnage-8500dwt #news_page_ui .news-grid .minimal-meta {
   color: #872dab;
+}
+
+/*
+Adjustments for news item grid
+Move meta to bottom of each box
+ */
+#news_page_ui .news-grid .news-grid-item {
+  position: relative;
+  padding-bottom: 60px !important;
+  margin: 0 !important;
+}
+#news_page_ui .news-grid .news-grid-item .minimal-content {
+  position: unset;
+}
+#news_page_ui .news-grid .news-grid-item .minimal-meta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  margin: 0 !important;
 }
 
 /*
@@ -1519,37 +1579,65 @@ body.theme-dark aside.control-sidebar .control-sidebar-content {
 body.theme-dark aside.control-sidebar .timeline-container h3 {
   color: white !important;
 }
-body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item {
+body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item,
+body.theme-dark aside.control-sidebar .news-grid-item.minimal-item,
+body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item,
+body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item {
   background: #383838;
 }
-body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-date {
+body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-date,
+body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-date,
+body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-date,
+body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-date {
   color: #dee5e5;
 }
-body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content .minimal-title {
+body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-content .minimal-title,
+body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-content .minimal-title,
+body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content .minimal-title,
+body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content .minimal-title {
   color: white;
 }
-body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content .minimal-text {
+body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-content .minimal-text,
+body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-content .minimal-text,
+body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content .minimal-text,
+body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content .minimal-text {
   color: white;
 }
-body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link {
+body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link,
+body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link,
+body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link,
+body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link {
   color: #33c9b1;
   border: 1px solid #33c9b1;
 }
 @media (hover: hover) {
-  body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:hover, body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:active, body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content a.read-more-link:focus {
+  body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link:hover, body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link:active, body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-content a.read-more-link:focus,
+  body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link:hover,
+  body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link:active,
+  body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-content a.read-more-link:focus,
+  body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link:hover,
+  body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link:active,
+  body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content a.read-more-link:focus,
+  body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link:hover,
+  body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link:active,
+  body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content a.read-more-link:focus {
     background: white;
     color: #222222;
     border-color: white;
   }
 }
-body.theme-dark aside.control-sidebar .timeline-container .minimal-timeline .minimal-item .minimal-content .minimal-meta {
+body.theme-dark aside.control-sidebar .minimal-timeline .minimal-item .minimal-content .minimal-meta,
+body.theme-dark aside.control-sidebar .news-grid-item.minimal-item .minimal-content .minimal-meta,
+body.theme-dark #news_page_ui .news-grid .minimal-timeline .minimal-item .minimal-content .minimal-meta,
+body.theme-dark #news_page_ui .news-grid .news-grid-item.minimal-item .minimal-content .minimal-meta {
   border-top: 1px solid #222222;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 10px;
   font-weight: 500;
 }
-body.theme-dark aside.control-sidebar .timeline-container .no-news-message {
+body.theme-dark aside.control-sidebar .no-news-message,
+body.theme-dark #news_page_ui .news-grid .no-news-message {
   color: #959a9a !important;
 }
 
