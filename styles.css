@@ -1575,7 +1575,7 @@ Set max-width of .news-grid so news items are limited to three-per-row on the Ne
 and then centre the whole tab content
  */
 #news_page_ui {
-  max-width: 1000px !important;
+  max-width: 2000px !important;
   margin-left: auto;
   margin-right: auto;
 }
