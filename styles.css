@@ -1571,6 +1571,16 @@ Move meta to bottom of each box
 }
 
 /*
+Set max-width of .news-grid so news items are limited to three-per-row on the News tab
+and then centre the whole tab content
+ */
+#news_page_ui {
+  max-width: 1000px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
 DARK MODE
  */
 body.theme-dark aside.control-sidebar .control-sidebar-content {
